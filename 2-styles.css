@@ -1,0 +1,63 @@
+.toggle {
+	margin: 20px;
+}
+.toggle-inner {
+	position: relative;
+	display: inline-block;
+	width: 66px;
+	height: 24px;
+	background-color: rgba(0, 0, 0, 0.25);
+	border-radius: 22px;
+	color: white;
+	font-weight: bold;
+	/* padding-left: 10px;
+	padding-top: 2px; */
+	text-align: center;
+	font-size: large;
+	/* transition: all 0.3s;
+	content: 'Yes'; */
+}
+
+
+.toggle-switch {
+
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background-color: white;
+	border: 1px solid gray;
+	/* top: 5px;
+	left: 0px;
+	transition: all 0.3s; */
+	top: 16px;
+	/* Adjusted to center within toggle-inner */
+	left: 10px;
+	transition: transform 0.3s;
+}
+
+.toggle-inner::after {
+	content: 'No';
+	color: #c3c3c3;
+}
+
+input[type='checkbox']:checked+
+label .toggle-inner {
+	background-color: #ebebeb;
+}
+
+
+input[type='checkbox']:checked+label .toggle-inner::after {
+	content: "Yes";
+}
+
+input[type='checkbox']:checked +
+label .toggle-switch {
+	transform: translateX(70px);
+}
+
+
+.toggle-cb {
+	position: absolute;
+	left: -9999px;
+}
