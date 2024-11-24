@@ -1,0 +1,7 @@
+/* generate multiple classes with different percentages
+based on class name using math and for loop */
+@for $i from 1 through 4 {
+	.col-#{$i} {
+			width: 100%/$i;
+	}
+}
