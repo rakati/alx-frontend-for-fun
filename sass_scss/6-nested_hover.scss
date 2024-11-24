@@ -1,10 +1,7 @@
 /* create scss with nested hover */
-$bcolor: #FF0000;
-$hcolor: #00FF00;
-
 button {
-        color: $bcolor;
-        &:hover {
-                color: $hcolor;
-        }
+	color: #FF0000;
+	&:hover {
+		color: #00FF00;
+	}
 }
