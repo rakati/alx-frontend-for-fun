@@ -1,0 +1,8 @@
+/* create sass file that change width of h1 depend on the screen size */
+$mdscreen: 320px;
+h1 {
+        font-size: 20px;
+        @media screen and (max-width: $mdscreen){
+                font-size: 14px;
+        }
+}
