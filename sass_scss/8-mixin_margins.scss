@@ -1,0 +1,12 @@
+/* writing sass file that assign value through mixin*/
+@mixin container($value: 10px) {
+	margin-left: $value;
+	margin-right: $value;
+}
+body {
+	@include container(10px);
+}
+
+div {
+	@include container(15px);
+}
