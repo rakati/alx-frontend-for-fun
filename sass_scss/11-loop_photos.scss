@@ -1,0 +1,9 @@
+/* Create a class for each name in the list of names
+and assign bg image */
+@import '11-photos';
+
+@each $name in $list-names {
+        .photo-#{$name} {
+                background-image: image-url("photos/#{$name}.jpg") no-repeat;
+        }
+}
