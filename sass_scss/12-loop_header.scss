@@ -1,0 +1,6 @@
+/* generate 6 h tags using for loop */
+@for $i from 1 through 5 {
+	h#{$i} {
+		font-size: #{$i}px;
+	}
+}
