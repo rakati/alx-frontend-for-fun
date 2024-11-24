@@ -1,0 +1,10 @@
+/* create scss with nested declaration, apply style on first child */
+$grey: #3D3D3D;
+$red: #FF0000;
+
+body {
+        color: $grey;
+        >.red {
+                color: $red;
+        }
+}
